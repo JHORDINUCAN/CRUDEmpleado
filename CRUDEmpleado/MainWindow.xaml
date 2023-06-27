@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:CRUDEmpleado"
         mc:Ignorable="d"
         Title="MainWindow" Height="600" Width="400">
-    <Grid>
+    <Grid Background="#FF49B2C9">
         <Label Content="Empleado" HorizontalAlignment="Center" Margin="0,34,0,0" VerticalAlignment="Top" FontSize="22" FontWeight="Bold"/>
         <Label Content="Nombre" HorizontalAlignment="Left" Margin="51,107,0,0" VerticalAlignment="Top"/>
         <TextBox x:Name="txtNombre" HorizontalAlignment="Left" Margin="51,138,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="287"/>
@@ -19,7 +19,7 @@
         <Label Content="Id" HorizontalAlignment="Left" Margin="54,329,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.439,-0.401"/>
         <TextBox x:Name="txtId" HorizontalAlignment="Left" Margin="51,360,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="287"/>
         <Button Content="Ver" HorizontalAlignment="Center" Margin="0,395,0,0" VerticalAlignment="Top" Height="27" Width="148" FontSize="16" Background="#FF3DB4CE"/>
-        <Button Content="Agregar" HorizontalAlignment="Center" Margin="0,435,0,0" VerticalAlignment="Top" Height="26" Width="148" FontSize="16" Background="#FF9AEA3C"/>
+        <Button x:Name="BtnAdd"  Content="Agregar" HorizontalAlignment="Center" Margin="0,435,0,0" VerticalAlignment="Top" Height="26" Width="148" FontSize="16" Background="#FF9AEA3C" Click="BtnAdd_Click"/>
         <Button Content="Editar" HorizontalAlignment="Center" Margin="0,475,0,0" VerticalAlignment="Top" Height="24" Width="148" FontSize="16" Background="#FFE3FF52"/>
         <Button Content="Eliminar" HorizontalAlignment="Center" Margin="0,514,0,0" VerticalAlignment="Top" Height="23" Width="148" FontSize="16" Background="Red"/>
 
