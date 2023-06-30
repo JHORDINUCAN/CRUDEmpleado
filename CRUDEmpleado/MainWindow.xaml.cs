@@ -37,11 +37,27 @@ namespace CRUDEmpleado
             empl.Correo = txtCorreo.Text;
             //agregar una condicion para no enviar datos nulos
             services.Agregar(empl);
-            
-            txtNombre.Clear();
-            txtApellido.Clear();
-            txtCorreo.Clear();
-            MessageBox.Show("Los datos se guardaron :D!");
+
+            if (string.IsNullOrEmpty(txtNombre.Text) || string.IsNullOrEmpty(txtApellido.Text) || string.IsNullOrEmpty(txtCorreo.Text))
+            {
+
+                MessageBox.Show("Por favor, complete todos los campos antes de guardar.");
+            }
+            else
+            {
+
+                empl.Nombre = txtNombre.Text;
+                empl.Apellido = txtApellido.Text;
+                empl.Correo = txtCorreo.Text;
+                services.Agregar(empl);
+
+
+                txtNombre.Clear();
+                txtApellido.Clear();
+                txtCorreo.Clear();
+                MessageBox.Show("Los datos se guardaron");
+
+            }
         }
     }
 }
